@@ -1,95 +1,128 @@
-🚀 DoShare – Secure File Sharing Platform
-DoShare is a modern, responsive, and secure file-sharing application built with Next.js, Firebase, and Clerk, enabling users to upload, manage, and share files via links or email with real-time.
+# 📤 Doshare
 
-<p align="left"> <img src="https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=next.js&logoColor=white" /> <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" /> <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" /> <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" /> <img src="https://img.shields.io/badge/Clerk-2E3440?style=for-the-badge&logo=clerk&logoColor=white" /> <img src="https://img.shields.io/badge/Nodemailer-4B4B4B?style=for-the-badge&logo=nodemailer&logoColor=white" /> <img src="https://img.shields.io/badge/HyperUI-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" /> <img src="https://img.shields.io/badge/MerakiUI-14B8A6?style=for-the-badge&logo=tailwindcss&logoColor=white" /> <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" /> <img src="https://img.shields.io/badge/Vercel-000?style=for-the-badge&logo=vercel&logoColor=white" /> </p>
-📚 Table of Contents
-🛠️ Tech Stack
+A secure and intuitive file-sharing platform built with **Next.js**, **Firebase**, and **Tailwind CSS**. Doshare allows users to seamlessly upload files, generate shareable links, and send them directly via email, all protected by robust user authentication.
 
-🚀 Installation
+<p align="left">
+  <img src="https://img.shields.io/badge/Next.js-000?style=for-the-badge&logo=next.js&logoColor=white" />
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
+  <img src="https://img.shields.io/badge/Clerk-6C47FF?style=for-the-badge&logo=clerk&logoColor=white" />
+  <img src="https://img.shields.io/badge/Nodemailer-02A576?style=for-the-badge&logo=nodemailer&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vercel-000?style=for-the-badge&logo=vercel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white" />
+</p>
 
-📁 Folder Structure
+---
 
-🔐 Features
+## 📚 Table of Contents
 
-🌐 Deployment
+- [🛠️ Tech Stack](#️-tech-stack)
+- [🚀 Installation](#-installation)
+- [📁 Folder Structure](#-folder-structure)
+- [🔐 Features](#-features)
+- [🌐 Deployment](#-deployment)
+- [📬 Contact](#-contact)
 
-📬 Contact
+---
 
-🛠️ Tech Stack
-Layer	Technology
-Frontend	Next.js + React
-Styling	Tailwind CSS, HyperUI, MerakiUI
-Auth	Clerk
-File Storage	Firebase Storage
-Mailing	Nodemailer
-Testing	Postman
-Hosting	Vercel
+## 🛠️ Tech Stack
 
-🚀 Installation
-1️⃣ Clone the Repository
-bash
-Copy
-Edit
-git clone https://github.com/Suraj-kumar-pattnayak/DoShare.git
-cd DoShare
-2️⃣ Install Dependencies
-bash
-Copy
-Edit
+| Layer               | Technology                       |
+|---------------------|----------------------------------|
+| **Frontend**        | Next.js, React.js                |
+| **Backend**         | Next.js API Routes               |
+| **Styling**         | Tailwind CSS, HyperUI, MerakiUI  |
+| **Authentication**  | Clerk                            |
+| **Storage**         | Firebase Storage                 |
+| **Email Service**   | Nodemailer                       |
+| **API Testing**     | Postman                          |
+| **Hosting**         | Vercel                           |
+
+---
+
+## 🚀 Installation
+
+Follow these steps to get the project running locally:
+
+### 1️⃣ Clone the Repository
+
+```bash
+git clone [https://github.com/your-username/doshare.git](https://github.com/your-username/doshare.git)
+cd doshare
+```
+### 2️⃣ Install Dependencies
+```bash
 npm install
-3️⃣ Add Environment Variables
-Create a .env.local file in the root:
+```
+### 3️⃣ Add Environment Variables
+```bash
+# Firebase Configuration
+NEXT_PUBLIC_FIREBASE_API_KEY=your_firebase_api_key
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=your_firebase_project_id
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=your_firebase_Messaginger_id
+NEXT_PUBLIC_FIREBASE_APP_ID=your_firebase_app_id
 
-ini
-Copy
-Edit
-CLERK_PUBLISHABLE_KEY=your_clerk_key
-CLERK_SECRET_KEY=your_clerk_secret
-FIREBASE_API_KEY=your_firebase_key
-FIREBASE_PROJECT_ID=your_firebase_project_id
-SMTP_EMAIL=your_email@example.com
-SMTP_PASSWORD=your_email_password
-4️⃣ Run the App Locally
-bash
-Copy
-Edit
+# Clerk Authentication
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
+CLERK_SECRET_KEY=your_clerk_secret_key
+
+# Nodemailer Configuration
+NODEMAILER_EMAIL=your_app_email@gmail.com
+NODEMAILER_PW=your_app_password
+```
+### 4️⃣ Run the App Locally
+```bash
 npm run dev
-5️⃣ Open the App
-bash
-Copy
-Edit
-http://localhost:3000
-📁 Folder Structure
-bash
-Copy
-Edit
+```
+### 5️⃣ Finally The Output
+The application will be available at http://localhost:3000.
+---
+## 📁 Folder Structure
+
+```bash
 app/
-├── _components/          # Reusable UI components (Banner, Header, etc.)
-├── _utils/               # Utility functions (email rendering, axios config)
-├── (auth)/
-│   └── (routes)/         # Auth routes (sign-in, sign-up)
-├── (dashboard)/
-│   ├── _components/      # Dashboard-specific components
-│   └── (routes)/         # Dashboard pages
-├── api/send/             # API route for sending emails
-├── dP/[fileId]/          # Dynamic file viewer/share route
-├── globals.css           # Global styles
-├── layout.js             # App layout
-└── page.js               # Home page
-🔐 Features
-✅ Secure user authentication with Clerk
-✅ Drag-and-drop file upload with real-time progress tracking
-✅ Firebase-powered secure file storage
-✅ Share files via public link or email (using Nodemailer)
-✅ Clean, modern UI with Tailwind, HyperUI, and MerakiUI
-✅ Public file preview/download page
-✅ Protected dashboard view for file management
-✅ API tested with Postman
+├── _components/           # Reusable components (Banner, Header, etc.)
+├── _utils/                # Utility functions (Axios, Email rendering)
+├── (auth)/                # Authentication pages
+│   └── (routes)/          # sign-in / sign-up routes
+├── (dashboard)/           # User dashboard area
+│   ├── _components/       # Dashboard-specific components
+│   └── (routes)/          # Dashboard pages
+├── api/send/              # API route for email sending (Nodemailer)
+├── dP/[fileId]/           # Public file viewer / downloader
+├── globals.css            # Global styles
+├── layout.js              # Root layout file
+└── page.js                # Main home page
+```
+---
 
-🌐 Deployment
-✅ Hosted on Vercel
-🌍 Live App: https://do-share-five.vercel.app
+## 🔐 Features
 
-📬 Contact
-Suraj Kumar Pattnayak
-GitHub: @Suraj-kumar-pattnayak
+#### 🔐 Secure user authentication using Clerk
+#### 🗃️ Drag & drop file uploads with progress indicator
+#### ☁️ Secure file storage using Firebase
+#### 📎 Share files via link or email (via Nodemailer)
+#### 🖼️ Public download preview page
+#### 📁 Authenticated dashboard to manage uploads
+#### 🧪 All routes tested via Postman
+#### ✨ Styled with Tailwind CSS, HyperUI, MerakiUI
+
+---
+
+## 🌐 Deployment
+#### This project is live and deployed using Vercel, with a custom domain set.
+
+✅ Visit Live App (https://do-share-five.vercel.app)
+
+---
+
+## 📬 Contact
+
+### Suraj Kumar Pattnayak
+###  📧 (surajkumarpattnayak@gmail.com)
+
+---
