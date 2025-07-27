@@ -1,6 +1,6 @@
 // files/_components/FileRow.js
 import React from 'react';
-import { FaFileAlt, FaImage, FaFilePdf, FaFileWord, FaFileExcel, FaFileZipper } from 'react-icons/fa6'; // Example icons
+import { FaFileAlt, FaImage, FaFilePdf, FaFileWord, FaFileExcel, FaFileArchive } from 'react-icons/fa'; //6 to remove from github
 import { IoEyeOutline } from "react-icons/io5"; // For the View button icon
 
 const getFileIcon = (fileType) => {
@@ -9,8 +9,8 @@ const getFileIcon = (fileType) => {
   if (fileType.includes('pdf')) return <FaFilePdf />;
   if (fileType.includes('word') || fileType.includes('document')) return <FaFileWord />;
   if (fileType.includes('excel') || fileType.includes('spreadsheet')) return <FaFileExcel />;
-  if (fileType.includes('zip') || fileType.includes('rar')) return <FaFileZipper />;
-  return <FaFileAlt />; // Default icon
+  if (fileType.includes('zip') || fileType.includes('rar')) return <FaFileArchive />;
+  return <FaFileAlt />;   //what is the issue
 };
 
 const FileRow = ({ file, onView }) => {

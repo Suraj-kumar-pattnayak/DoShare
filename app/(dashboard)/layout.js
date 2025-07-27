@@ -3,6 +3,7 @@ import React from 'react'
 import SideNavbar from './_components/SideNavbar'
 import TopHeader from './_components/TopHeader'
 
+
 const layout = ({ children }) => {
   return (
     <div className="flex flex-col flex-1 overflow-hidden bg-gray-100">
