@@ -7,7 +7,7 @@ export default function TopHeader() {
   return (
     <header className="sticky top-0 z-50 bg-[#0D1520]  px-4 py-3 flex items-center justify-between shadow-sm border-b border-gray-800">
       {/* Logo */}
-      <div className="flex items-center gap-2  min-w-0">
+      <div className="flex items-center gap-2  min-w-0 pl-10 md:pl-0">
         <Image
           src="/logo.svg"
           alt="Logo"

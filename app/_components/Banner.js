@@ -43,7 +43,7 @@ import React from 'react';
             </Link>
             <a
               className="inline-block rounded-lg border border-gray-300 px-6 py-3 font-medium text-gray-700 hover:bg-gray-100 transition shadow-sm"
-              href="#"
+              href="/upgrade"
             >
               Learn More
             </a>

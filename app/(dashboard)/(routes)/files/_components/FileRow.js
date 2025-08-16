@@ -34,9 +34,9 @@ const FileRow = ({ file, onView }) => {
       </div>
 
       {/* File Type */}
-      <div className="col-span-1 text-center text-sm text-gray-600">
+      {/* <div className="col-span-1 text-center text-sm text-gray-600">
         {file.fileType}
-      </div>
+      </div> */}
 
       {/* File Size */}
       <div className="col-span-1 text-center text-sm text-gray-600">

@@ -16,7 +16,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
       <ClerkProvider>
-      <html lang="en">
+       <html lang="en" suppressHydrationWarning> {/*  for syncing clientside and server side */}
       <body
         className={`${OutfitT.variable} antialiased`}
       >

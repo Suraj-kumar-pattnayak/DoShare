@@ -87,7 +87,7 @@ const FilesPage = () => {
           <div className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-200">
             <div className="grid grid-cols-5 p-4 text-sm font-semibold text-gray-700 bg-gray-100 border-b border-gray-200">
               <div className="col-span-2">File Name</div>
-              <div className="col-span-1 text-center">Type</div>
+              {/* <div className="col-span-1 text-center">Type</div> */}
               <div className="col-span-1 text-center">Size</div>
               <div className="col-span-1 text-center">Action</div>
             </div>
