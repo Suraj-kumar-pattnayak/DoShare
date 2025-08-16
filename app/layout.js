@@ -10,7 +10,11 @@ const OutfitT = Outfit({
 });
 
 export const metadata = {
-  title: "DO Share : File-Sharing application"
+  title: "DO Share : File-Sharing application",
+  description : "A file sharing applications",
+  icons : {
+    icon : "/file-color-icon.png"
+  }
 };
 
 export default function RootLayout({ children }) {

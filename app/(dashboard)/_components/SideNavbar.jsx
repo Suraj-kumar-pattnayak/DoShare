@@ -111,12 +111,6 @@ const SideNavbar = () => {
               </Link>
             </nav>
           </aside>
-
-          {/* Overlay */}
-          <div
-            onClick={() => setIsOpen(false)}
-            className="flex-1 bg-black bg-opacity-50"
-          />
         </div>
       )}
     </>
